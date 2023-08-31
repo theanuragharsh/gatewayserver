@@ -17,6 +17,7 @@ public class GatewayserverApplication {
         SpringApplication.run(GatewayserverApplication.class, args);
     }
 
+    //    We can do routing by directly configuring these as properties in application.properties file or .yml file
     @Bean
     public RouteLocator bankServiceRoutes(RouteLocatorBuilder routeLocatorBuilder) {
         return routeLocatorBuilder
